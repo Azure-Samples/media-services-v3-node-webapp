@@ -1,14 +1,12 @@
-# Project Name
+# Azure Media Services Basic Web App Samples
 
 (short, 1-3 sentenced, description of the project)
 
-## Features
+## Requirements
 
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
+- Node 12+
+- NPM 6+
+- Web browser
 
 ## Getting Started
 
