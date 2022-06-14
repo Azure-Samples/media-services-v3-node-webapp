@@ -1,6 +1,7 @@
 # Azure Media Services Basic Web App Samples
 
-Hello world
+This is a set of basic web samples showing how to create a simple website
+that uses azure services to display videos.
 
 ## Requirements
 
