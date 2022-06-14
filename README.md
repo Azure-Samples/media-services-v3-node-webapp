@@ -1,6 +1,6 @@
 # Azure Media Services Basic Web App Samples
 
-(short, 1-3 sentenced, description of the project)
+Hello world
 
 ## Requirements
 
