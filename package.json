@@ -1,0 +1,19 @@
+{
+  "name": "media-services-v3-basic-webapp",
+  "version": "1.0.0",
+  "description": "This is a set of basic web samples showing how to create a simple website that uses azure services to display videos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saradeutscher/media-services-v3-basic-webapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saradeutscher/media-services-v3-basic-webapp/issues"
+  },
+  "homepage": "https://github.com/saradeutscher/media-services-v3-basic-webapp#readme"
+}
