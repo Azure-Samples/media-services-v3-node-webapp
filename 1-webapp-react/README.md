@@ -1,60 +1,28 @@
-# Getting Started with Create React App and Fluent UI
+#  Simple Video Streaming Webapp with React
 
-This is a [Create React App](https://github.com/facebook/create-react-app) based repo that comes with Fluent UI pre-installed!
+This samples contains a React application for streaming videos. In this version anyone can browse and watch a selection of videos with no authentication needed.
 
-## Available Scripts
+## Features
+#
+* Web application for browsing
+* Video playback using Shaka Player
+(More info on the Shaka Player can be found [here](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html))
 
-In the project directory, you can run:
+## Getting Started
+#
+### Prerequisites
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download)
+2. Install [Node.js](https://nodejs.org/en/download/) version 12.18 or higher
+3. Download and install [TypeScript](https://www.typescriptlang.org/download)
 
-### `npm start`
+### Install TypeScript via npm
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can use npm to install TypeScript globally, this means you can use the tsc command anywhere in your terminal.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+To do this, run ```npm install -g typescript```. This will install the latest version.
 
-### `npm test`
+### Run sample
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-# Contributing
-
-This project welcomes contributions and suggestions. Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+1. Clone the repository
+2. Update the video.json file to contain the necessary information for the videos you would like to display
+3. Run `npm start` to start the app in development mode and Open [http://localhost:3000](http://localhost:3000) to view it in the browser
