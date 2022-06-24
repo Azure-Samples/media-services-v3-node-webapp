@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Stack, Text, DefaultButton, FontWeights, IStackTokens, IStackStyles, ITextStyles,  IStackItemStyles, DefaultPalette } from '@fluentui/react';
+import { Stack, DefaultButton, IStackStyles, DefaultPalette } from '@fluentui/react';
 
 
 const nonShrinkingStackItemStylesLeft: IStackStyles = {

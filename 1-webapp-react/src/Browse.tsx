@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Stack, Text, DefaultButton, FontWeights, IStackTokens, IStackStyles, ITextStyles } from '@fluentui/react';
+import { useNavigate } from 'react-router-dom';
+import { DefaultPalette, Stack, IStackTokens, IStackStyles } from '@fluentui/react';
 import { Header } from "./Header";
 import {
   DocumentCard,
@@ -9,13 +9,15 @@ import {
   DocumentCardImage,
   IDocumentCardStyles,
 } from '@fluentui/react/lib/DocumentCard';
-import { IIconProps } from '@fluentui/react/lib/Icon';
 import { ImageFit } from '@fluentui/react/lib/Image';
 
 const stackTokens: IStackTokens = { childrenGap: 5 };
+
 const stackStyles: Partial<IStackStyles> = {
   root: {
+    background: DefaultPalette.themeLighter,
     width: 'auto',
+    height: 'auto',
     margin: '0 auto',
     textAlign: 'center',
     color: '#605e5c',
@@ -42,20 +44,21 @@ interface videoData {
 
 export const Browse = (props: BrowseProps) => {
   const cardStyles: IDocumentCardStyles = {
-    root: { display: 'inline-block', marginRight: 10, marginBottom: 10, width: 350 },
+    root: { display: 'inline-block', marginBottom: 10, width: 350 },
   };
 
   let navigate = useNavigate();
 
   return (
-    <Stack className="App" horizontalAlign="center" verticalAlign="center" verticalFill styles={stackStyles} tokens={stackTokens}>
+    <Stack className="App" verticalAlign="center" verticalFill styles={stackStyles} tokens={stackTokens}>
       <Header />
       <h1> Videos: </h1>
-      <Stack className="imgs" horizontal horizontalAlign="center"  styles={videoCardStack} tokens={stackTokens}>
+      <Stack className="imgs" wrap horizontal horizontalAlign='center' styles={videoCardStack} >
         {props.videos.map(video => {
-          return (<div key={video.id} className="thumbnails">
+          return (
             <DocumentCard
-              className="card"
+              key={video.id}
+              className="thumbnails"
               styles={cardStyles}
               onClick={() => { navigate(`watch/${video.id}`)}}
             >
@@ -64,7 +67,6 @@ export const Browse = (props: BrowseProps) => {
                 <DocumentCardTitle title={video.title} shouldTruncate />
               </DocumentCardDetails>
             </DocumentCard>
-          </div>
           )
         })}
       </Stack>

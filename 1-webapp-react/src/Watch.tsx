@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Stack, Text, DefaultButton, FontWeights, IStackTokens, IStackStyles, ITextStyles } from '@fluentui/react';
+import { DefaultPalette, Stack, DefaultButton, IStackTokens, IStackStyles } from '@fluentui/react';
 import { Header } from "./Header";
 import ShakaPlayer from './ShakaPlayer';
-
-
-const boldStyle: Partial<ITextStyles> = { root: { fontWeight: FontWeights.semibold } };
 
 const stackTokens: IStackTokens = { childrenGap: 5 };
 const stackStyles: Partial<IStackStyles> = {
   root: {
-    width: 'auto',
+    background: DefaultPalette.themeLighter,
+    width: '100%',
+    height: '100vh',
     margin: '0 auto',
     textAlign: 'center',
     color: '#605e5c',
@@ -30,18 +29,19 @@ interface videoData {
 export const Watch = (props: WatchProps) => {
   const { vidId } = useParams();
   let video = props.videos.filter(video => video.id.toString() === vidId)
+
   return (
-    <Stack className="App" horizontalAlign='center' verticalAlign='center' styles={stackStyles} tokens={stackTokens}>
-      <Header />
-      <Stack id="imgs" horizontal horizontalAlign="center">
-        {video.length === 1 && <div key={video[0].id} className="player">
+    <Stack styles={stackStyles} tokens={stackTokens}>
+      <Stack className="App" horizontalAlign='center' verticalAlign='center' >
+        <Header />
+          {video.length === 1 && <Stack className="video" horizontalAlign="center" key={video[0].id}>
             <h2>{video[0].title}</h2>
             <ShakaPlayer src={video[0].locator} />
-          </div>}
+          </Stack>}
       </Stack>
-      <Link to="/">
-        <DefaultButton text="home" />
-      </Link>
+        <Link className="btn" to="/">
+          <DefaultButton text="home" />
+        </Link>
     </Stack>
   )
 }

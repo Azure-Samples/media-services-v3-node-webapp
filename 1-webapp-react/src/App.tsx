@@ -4,8 +4,6 @@ import {
   Route,
   Routes
 } from 'react-router-dom';
-import { Stack, Text, Link, DefaultButton, FontWeights, IStackTokens, IStackStyles, ITextStyles } from '@fluentui/react';
-import { DefaultPalette } from '@fluentui/react/lib/Styling';
 import './App.css';
 import { Watch } from './Watch';
 import { Browse } from './Browse';

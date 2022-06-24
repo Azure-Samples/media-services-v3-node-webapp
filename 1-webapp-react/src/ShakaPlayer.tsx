@@ -84,7 +84,8 @@ class ShakaPlayer extends React.PureComponent<ShakaProps, {}>{
 					ref={this.videoComponent}
 					style={{
 						maxWidth: '100%',
-						width: '100%'
+						width: '100%',
+						backgroundColor: 'rgba(0,0,0,0.75)'
 					}}
 				/>
 			</div>
