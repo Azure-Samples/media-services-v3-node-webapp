@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  justify-content: start;
+  background-color: aliceblue;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 5%;
+  z-index: 10
+}
+
+header, nav {
+  display: flex;
+  align-items: center;
+}
+
+.thumbnails {
+  margin: 2%;
+}
+
+.thumbnails img {
+  width: 100%;
+}
+
+header img {
+  justify-content: flex-start;
+  margin: 10px;
+  height: 8vh;
+}
+
+button {
+  font-weight: bold;
+  font-size: 1vw;
+  margin: 1%;
+  height: 5vh;
+  cursor: pointer;
+  text-align: center;
+}
+
+#video {
+  width: 10vh;
+}
+
+.imgs {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
