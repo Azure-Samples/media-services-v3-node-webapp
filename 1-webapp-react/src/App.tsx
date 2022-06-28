@@ -7,15 +7,9 @@ import {
 import './App.css';
 import { Watch } from './Watch';
 import { Browse } from './Browse';
+import VideoData from "./iVideoData";
 
-interface videoData {
-  id: number;
-  title: string;
-  locator: string;
-  thumbnail: string;
-}
-
-class App extends React.Component<{}, { videos: videoData[] }> {
+class App extends React.Component<{}, { videos: VideoData[] }> {
   constructor(props: any) {
     super(props)
     this.state = { videos: [] }
