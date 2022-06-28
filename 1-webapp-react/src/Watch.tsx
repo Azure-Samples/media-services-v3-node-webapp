@@ -3,13 +3,15 @@ import { Link, useParams } from 'react-router-dom';
 import { DefaultPalette, Stack, DefaultButton, IStackTokens, IStackStyles } from '@fluentui/react';
 import { Header } from "./Header";
 import ShakaPlayer from './ShakaPlayer';
+import VideoData from "./iVideoData";
 
-const stackTokens: IStackTokens = { childrenGap: 5 };
+
+const stackTokens: IStackTokens = { childrenGap: 0 };
 const stackStyles: Partial<IStackStyles> = {
   root: {
     background: DefaultPalette.themeLighter,
     width: '100%',
-    height: '100vh',
+    height: '100%',
     margin: '0 auto',
     textAlign: 'center',
     color: '#605e5c',
@@ -17,15 +19,9 @@ const stackStyles: Partial<IStackStyles> = {
 };
 
 interface WatchProps {
-  videos: videoData[]
+  videos: VideoData[]
 }
 
-interface videoData {
-  id: number;
-  title: string;
-  locator: string;
-  thumbnail: string;
-}
 export const Watch = (props: WatchProps) => {
   const { vidId } = useParams();
   let video = props.videos.filter(video => video.id.toString() === vidId)

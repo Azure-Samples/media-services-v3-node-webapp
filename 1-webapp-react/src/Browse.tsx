@@ -10,6 +10,8 @@ import {
   IDocumentCardStyles,
 } from '@fluentui/react/lib/DocumentCard';
 import { ImageFit } from '@fluentui/react/lib/Image';
+import VideoData from "./iVideoData";
+
 
 const stackTokens: IStackTokens = { childrenGap: 5 };
 
@@ -17,7 +19,7 @@ const stackStyles: Partial<IStackStyles> = {
   root: {
     background: DefaultPalette.themeLighter,
     width: 'auto',
-    height: 'auto',
+    height: '100%',
     margin: '0 auto',
     textAlign: 'center',
     color: '#605e5c',
@@ -32,14 +34,7 @@ const videoCardStack: Partial<IStackStyles> = {
 };
 
 interface BrowseProps {
-  videos: videoData[]
-}
-
-interface videoData {
-  id: number;
-  title: string;
-  locator: string;
-  thumbnail: string;
+  videos: VideoData[]
 }
 
 export const Browse = (props: BrowseProps) => {

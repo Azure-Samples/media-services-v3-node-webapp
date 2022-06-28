@@ -20,7 +20,6 @@ const nonShrinkingStackItemStylesRight: IStackStyles = {
 };
 
 export const Header = () => {
-
   return (
     <header className="App-header">
         <Stack disableShrink styles={nonShrinkingStackItemStylesLeft} >

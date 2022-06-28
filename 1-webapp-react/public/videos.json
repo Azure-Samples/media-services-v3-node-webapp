@@ -16,53 +16,5 @@
     "title": "All about boats",
     "locator": "//jopaynauea1media-aueas.streaming.media.azure.net/ff8435c0-dc85-4514-8e7c-8ae5f8808729/Boats.ism/manifest(format=m3u8-cmaf).m3u8",
     "thumbnail": "Boats.png"
-  },
-  {
-    "id": 4,
-    "title": "All about cars",
-    "locator": "//jopaynauea1media-aueas.streaming.media.azure.net/1bfffac1-0c59-43ad-a2f8-c9126360f5a7/Cars.ism/manifest(format=m3u8-cmaf).m3u8",
-    "thumbnail": "Cars.png"
-  },
-  {
-    "id": 5,
-    "title": "All about boats",
-    "locator": "//jopaynauea1media-aueas.streaming.media.azure.net/ff8435c0-dc85-4514-8e7c-8ae5f8808729/Boats.ism/manifest(format=m3u8-cmaf).m3u8",
-    "thumbnail": "Boats.png"
-  },
-  {
-    "id": 6,
-    "title": "All about cars",
-    "locator": "//jopaynauea1media-aueas.streaming.media.azure.net/1bfffac1-0c59-43ad-a2f8-c9126360f5a7/Cars.ism/manifest(format=m3u8-cmaf).m3u8",
-    "thumbnail": "Cars.png"
-  },
-  {
-    "id": 7,
-    "title": "All about boats",
-    "locator": "//jopaynauea1media-aueas.streaming.media.azure.net/ff8435c0-dc85-4514-8e7c-8ae5f8808729/Boats.ism/manifest(format=m3u8-cmaf).m3u8",
-    "thumbnail": "Boats.png"
-  },
-  {
-    "id": 8,
-    "title": "All about cars",
-    "locator": "//jopaynauea1media-aueas.streaming.media.azure.net/1bfffac1-0c59-43ad-a2f8-c9126360f5a7/Cars.ism/manifest(format=m3u8-cmaf).m3u8",
-    "thumbnail": "Cars.png"
-  },
-  {
-    "id": 9,
-    "title": "All about boats",
-    "locator": "//jopaynauea1media-aueas.streaming.media.azure.net/ff8435c0-dc85-4514-8e7c-8ae5f8808729/Boats.ism/manifest(format=m3u8-cmaf).m3u8",
-    "thumbnail": "Boats.png"
-  },
-  {
-    "id": 10,
-    "title": "All about cars",
-    "locator": "//jopaynauea1media-aueas.streaming.media.azure.net/1bfffac1-0c59-43ad-a2f8-c9126360f5a7/Cars.ism/manifest(format=m3u8-cmaf).m3u8",
-    "thumbnail": "Cars.png"
-  },
-  {
-    "id": 11,
-    "title": "All about boats",
-    "locator": "//jopaynauea1media-aueas.streaming.media.azure.net/ff8435c0-dc85-4514-8e7c-8ae5f8808729/Boats.ism/manifest(format=m3u8-cmaf).m3u8",
-    "thumbnail": "Boats.png"
   }
 ]
